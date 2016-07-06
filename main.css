@@ -1,0 +1,313 @@
+/*Background Image Size and Position*/
+html { 
+	background: url(../../assets/images/huangshan.JPG); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: rgba(255,255,255,.7);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+}
+
+.dimScreen
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,.15);
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background: url(../../assets/images/logo-background.JPG); 
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+  }
+}
+
+/*Body*/
+body {
+	font-family:'century gothic';
+}
+
+/*Paragraph*/
+p {
+    color: rgba(255,255,255,.9);
+}
+
+/*Headings*/
+h1 {
+	font-size: 32px;
+    color:rgba(255,255,255,.7);
+}
+
+/*Welcome to Skyridge*/
+.introBox{
+	text-align: left;
+	font-size: 15px;
+    padding-top: 15%;
+	padding-left: 55%;
+	z-index:0;
+	/*border: solid 1px;*/
+	/*border-color: red;*/
+}
+
+/*Discover Something New*/
+.introBox blockquote{
+	border:0;
+	padding-top: 0;
+	padding-left: 1%;
+	color:rgba(255,255,255,.7);
+	font-size: 20px;
+	/*border: solid 1px;*/
+}
+
+.introBox blockquote button{
+	border: none;
+	outline: none;
+	padding-top: 0;
+	padding-left: 0;
+	color:rgba(255,255,255,.6);
+	font-size: 20px;
+	background-color: transparent;
+        /*border: solid 1px;*/
+
+}
+
+.introBox blockquote button:hover{
+	color:rgba(200,50,50,1);
+}
+
+
+/*Bottom Menu*/
+#menu{
+	position:absolute;
+	height:50px;
+	bottom:10px;
+	left:2%;
+	z-index:10;
+	width:96%;
+	line-height:10px;
+	font-family:'century gothic';
+	background:rgba(20,120,20,.3);
+	padding:0 0 0 0;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu li a{
+	font-family:'century gothic';
+	font-size: 14px;
+	padding:15px;
+	font-weight:normal;
+    color: rgba(255,255,255,.6);
+}
+
+#menu li button{
+	font-family:'century gothic';
+	font-size: 13px;
+	padding:16px;
+	font-weight:normal;
+    display: inline;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+#menu li a:hover {
+	color:rgba(255,255,255,1);
+	text-decoration: underline;
+}
+
+#menu li button:hover {
+	color:rgba(255,255,255,1);
+	text-decoration: underline;	
+}
+
+#missionbutton {
+    color: rgba(255,255,255,.8);
+	background:rgba(20,120,20,.2);
+	text-align:center;
+	display:block;
+	border: none;
+	outline: none;
+	font-weight:normal;
+	position:relative;
+}
+
+#subjectsbutton {
+    color: rgba(255,255,255,.6);
+}
+
+#contactbutton {
+    color: rgba(255,255,255,.6);
+}
+
+#termsbutton {
+    color: rgba(255,255,255,.6);
+}
+
+/*Javascript Shenanigans*/
+.formatBox{
+	padding-top: 18%;
+	padding-left: 0%;
+	padding-right: 0%;
+	z-index:0;
+	/*border: solid 1px;*/
+	/*border-color: red;*/
+}
+
+.container-fluid li a{
+	font-family:'century gothic';
+	font-size: 13px;
+	padding:0 1px;
+	font-weight:normal;
+    color: rgba(255,255,255,.7);
+	display: inline;
+	list-style-type: none;
+}
+
+.container-fluid li a:hover {
+	color:rgba(255,255,255,1);
+}
+
+.team {
+	overflow: scroll;
+}
+
+/* Modal fun */
+
+.modal-backdrop{
+	background-color: rgba(0,0,0,.5);
+}
+
+
+.modal-content{
+	background-color: rgba(255,255,255,1);
+}
+
+.modal-body{
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.modal-body>div>p{
+	color:rgba(0,0,0,1);
+}
+
+/* .modal-transparent */
+
+.modal-transparent {
+  background: transparent;
+}
+.modal-transparent .modal-content {
+  background: transparent;
+}
+.modal-backdrop.modal-backdrop-transparent {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background:rgba(0,0,0,.4);
+}
+
+.modal-fullscreen .modal-content {
+  background:rgba(255,255,255,1);
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+    background:rgba(255,255,255,0.7);
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 96%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
+
+
+/* Index Table */
+
+
+
+nav ul,nav ol{
+	list-style:none;
+	}
+
+table td{
+	border:2px solid #ccc;
+	padding:5px}
+
+/* Responsive iFrame */
+
+@media (max-width: 550px) {
+     .big-container {
+         display: none;
+     }
+ }
+ @media (min-width: 550px) {
+     .small-container {
+         display: none;
+     }
+ }
+ /* Responsive iFrame */
+ .responsive-iframe-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,   
+ .vresponsive-iframe-container object,  
+ .vresponsive-iframe-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+

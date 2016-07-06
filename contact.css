@@ -1,0 +1,124 @@
+html { 
+	background: url(../../assets/images/shanghai.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color:rgba(39, 40, 51, .9); 
+}
+
+.introBox{
+	text-align: left;
+	font-size: 15px;
+	padding-top: 14%;
+	padding-left: 49%;
+}
+
+.dimScreen
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,.2);
+}
+
+body {
+	font-family:'century gothic';
+}
+
+h1 {
+    font-size:24px;
+    color: rgba(255,255,255,.9);
+}
+
+h2 {
+	font-size:14px;
+	position:relative;
+	left:-169px;
+	margin-bottom:-50px;
+	width:168px;
+	opacity:0.99;
+}
+
+h2 a{
+
+	font-size:14px;
+	padding:25px 10px 10px 10px;
+	color:#fff;
+	background:rgba(0,0,0,.4);
+	text-align:right;
+	display:block;
+}
+
+p {
+    color: rgba(255,255,255,.9);
+}
+
+#menu{
+	position:absolute;
+	bottom:15px;
+	left:168px;
+	z-index:10;
+	width:100%;
+	line-height:12px;
+	font-family:'century gothic';
+}
+
+#menu div{
+	height:50px;
+	background:rgba(0,0,0,.4);
+	padding:8px 0 0 0;
+	font-family:'century gothic';
+}
+
+li a{
+	height:12px;
+	padding:0 5px;
+	font-weight:bold;
+	color:#999;
+	display:block
+}
+
+li a:hover {
+	color:#FE2E2E;
+}
+
+h2 a:hover {
+	color:#FE2E2E;
+}
+
+
+
+
+
+
+/*
+a.link    {
+	color:green; 
+	background-color:transparent; 
+	text-decoration:none
+}
+
+a.visited {
+	color:red; 
+	background-color:transparent; 
+	text-decoration:none
+}
+
+a.hover   {
+	color:red; 
+	background-color:transparent; 
+	text-decoration:underline
+}
+
+a.active  {
+	color:yellow; 
+	background-color:transparent; 
+	text-decoration:underline
+}
+*/

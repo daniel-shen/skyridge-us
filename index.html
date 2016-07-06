@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+  		<title>Skyridge</title>
+  		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Keywords" content="Math, Arithmetic, Algebra, Geometry, Pre-calculus, Calculus, Statistics, Probability, Science, English, Education, Math Examples, Mate Exercises, Math Notes">
+		<meta name="Description" content="Intuitive examples and comprehensive guides for self-directed learning">
+		<!-- Bootstrap CSS -->
+    	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    	<!-- Custom CSS -->
+   		<link href="assets/css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="dimScreen">
+
+		<!-- Landing Statement -->
+			<div class="introBox" id="introduction">
+				<p class="mission">
+					<h1>Welcome to Skyridge</h1> 
+                    <BLOCKQUOTE>Discover something new</BLOCKQUOTE>
+				</p>
+			</div>
+ 
+            <div class="formatBox" id="box" display:none>
+			</div>			
+		</div>
+
+        <div id="menu">
+			<ul style="list-style-type:none;">
+                <!-- Button triggers modal -->
+                <li><button id="missionbutton" data-toggle="modal" data-target="#mission">Skyridge</button></li>
+                <!-- Button triggers modal -->
+                <li><button id="subjectsbutton" data-toggle="modal" data-target="#index">Subjects</button></li>
+                <!-- Button triggers modal -->
+                <li><button id="contactbutton" data-toggle="modal" data-target="#contact">Contact</button></li>
+                <!-- Button triggers modal -->
+	   		    <li><button id="termsbutton" data-toggle="modal" data-target="#social">Terms</button></li>
+            </ul>
+		</div>
+
+        <!-- About Skyridge Modal -->
+        <div class="modal fade" id="mission" tabindex="-1" role="dialog" aria-labelledby="missionLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title" id="missionLabel">About Skyridge LLC</h4>
+                    </div>
+                    <div class="modal-body">
+                        <address>
+                            Mission: Engage and empower students for a lifetime of learning by providing intuitive examples and comprehensive materials for self-directed learning
+                            </br></br>    
+                            Chief Learning Officer: <a data-toggle="modal" href="#dshen"> Daniel Shen</a>
+                            </br></br>
+                            Date Organized: July 13, 2012
+
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Individual Profile Modal -->
+        <div class="modal fade modal-fullscreen" id="dshen" tabindex="-1" role="dialog" aria-labelledby="dshenLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title" style="text-align:center">Daniel Shen</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img style="border-radius:10%" align="middle" class="img-responsive" src="assets/images/portraits/dan-shen-450.jpg" alt="">
+                        </div>    
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <p>Hi there! <br><br>My name is Daniel and I am a Cincinnati native - born and raised. For college, I left all that I knew to study Economics and Mathematics at Yale. My original intent with this website was to create a place where I could share my thoughts, catalog my <a href="travel/index.html">experiences</a>, and learn as much as possible. <br><br>Lesson one: building a website from scratch with no prior experience is surprisingly non-intuitive. Luckily, I have the backing of a few of the smartest, funniest, and kind-hearted people I know: my support network of family and friends. With their gratuitous help and understanding, I now possess the nascent beginnings of a blossoming website and the motivation necessary to keep plodding forward with this project.<br><br>As I continue to develop this site, please feel free to reach out with any questions, comments, or concerns (but preferably not with any bills or lawsuits). In other words, please tell me if I'm doing something wrong or if you come across anything that hasn't been cited properly. I'd also appreciate suggestions on how to improve. Otherwise, I hope you enjoy! <br><br>- Daniel</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subjects Index Modal -->
+        <div class="modal fade" id="index" tabindex="-1" role="dialog" aria-labelledby="subjectsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title" id="subjectsLabel">Index</h4> 
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-1">
+                            </div>
+                            <div class="col-sm-5">  
+                                <h2 style="text-align: left;">Subjects</h2>
+                                <ul class="almanac-list selector-list group">
+                                    <li class="page_item"><a href="#">A</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="algebra/index.html">Algebra</a></li>
+                                            <!--<li class="page_item"><a href="#">Analysis</a></li>-->
+                                            <li class="page_item"><a href="arithmetic/index.html">Arithmetic</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--<li class="page_item" style=""><a href="#">B</a></li>
+                                        <li class="page_item"><a href="#">C</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="calculus/index.html" target="_blank">Calculus</a></li>
+                                                <li class="page_item"><a href="#">Combinatorics</a></li>    
+                                            </ul>
+                                        </li>
+                                    <li class="page_item"><a href="#">D</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="#">Differential Equations</a></li>  
+                                        </ul>
+                                    </li>
+                                    <li class="page_item" style=""><a href="#">E</a></li>
+                                    <li class="page_item" style=""><a href="#">F</a></li>-->
+
+                                    <!--<li class="page_item"><a href="#">G</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="geometry/index.html">Geometry</a></li>  
+                                        </ul>
+                                    </li>
+                                    <li class="page_item" style=""><a href="#">H</a></li>
+                                    <li class="page_item" style=""><a href="#">I</a></li>
+                                    <li class="page_item" style=""><a href="#">J</a></li>
+                                    <li class="page_item" style=""><a href="#">K</a></li>
+                                    <li class="page_item"><a href="#">L</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="#">Logic</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_item" style=""><a href="#">M</a></li>
+                                    <li class="page_item"><a href="#">N</a>
+                                        <ul class="children">
+                                            <li><a href="#">Number Theory</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_item" style=""><a href="#">O</a></li>
+                                    <li class="page_item"><a href="#">P</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="#">Pre-Calculus</a></li>
+                                            <li class="page_item"><a href="#">Probability</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="page_item" style=""><a href="#">Q</a></li>
+                                    <li class="page_item" style=""><a href="#">R</a></li>
+                                    <li class="page_item"><a href="#">S</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="#">Statistics</a></li>
+                                        </ul>
+                                    </li>-->
+                                    <li class="page_item"><a href="#">T</a>
+                                        <ul class="children">
+                                            <li class="page_item"><a href="trigonometry/index.html">Trigonometry</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--<li class="page_item" style=""><a href="#">U</a></li>
+                                    <li class="page_item" style=""><a href="#">V</a></li>
+                                    <li class="page_item" style=""><a href="#">W</a></li>
+                                    <li class="page_item" style=""><a href="#">X</a></li>
+                                    <li class="page_item" style=""><a href="#">Y</a></li>
+                                    <li class="page_item" style=""><a href="#">Z</a></li>-->
+                                </ul>
+                            </div>
+                    
+                            <div class="col-sm-5">
+                                <h2 style="text-align: left;">Topics</h2>
+                                    <ul class="almanac-list property-list group">
+                                        <!--<li class="page_item"><a href="#">A</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item"><a href="#">B</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item"><a href="#">C</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">D</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>    
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">E</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">F</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">G</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">H</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">I</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">J</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">K</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">L</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">M</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">N</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">O</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">P</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">Q</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">R</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">S</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">T</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">U</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">V</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">W</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">X</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">Y</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="page_item" style=""><a href="#">Z</a>
+                                            <ul class="children">
+                                                <li class="page_item"><a href="#"></a></li>
+                                            </ul>
+                                        </li>-->
+                                    </ul>
+                            </div>
+                            <div class="col-sm-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title" id="contactLabel">Contact</h4>    
+                    </div>
+                    <div class="modal-body">
+                        <address>
+                            Email: daniel.shen@skyridge.us
+                            <br><br>
+                            Calendar: <a data-toggle="modal" href="#gcal">Daniel's Schedule</a>
+                            <br><br>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Google Calendar Modal-->
+        <div class="modal fade modal-fullscreen" id="gcal" tabindex="-1" role="dialog" aria-labelledby="gcalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title" style="text-align:center"> Calendar</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-xs-1">
+                        </div>  
+                        <div class="col-xs-10">
+                            <div class="responsive-iframe-container">
+                                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=daniel.shen%40skyridge.us&amp;color=%23125A12&amp;ctz=Asia%2FShanghai" style="border-width:0" scrolling="no"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+                        </div>  
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms of Use Modal -->
+        <div class="modal fade" id="social" tabindex="-1" role="dialog" aria-labelledby="socialLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4 class="modal-title" id="socialLabel">Terms of Use</h4>
+                    </div>
+                    <div class="modal-body">
+                        <address>
+                            <h5>Terms of Use</h5>
+                            <h5>Privacy Policy</h5>
+                        </address>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+		<!-- jQuery -->
+    	<script src="assets/js/jquery.js"></script>
+
+	    <!-- Bootstrap Core JavaScript -->
+    	<script src="assets/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
