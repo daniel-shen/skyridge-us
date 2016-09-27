@@ -4,7 +4,7 @@
   		<title>Skyridge</title>
   		<meta charset="UTF-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="Keywords" content="Math, Arithmetic, Algebra, Geometry, Pre-calculus, Calculus, Statistics, Probability, Science, English, Education, Math Examples, Mate Exercises, Math Notes">
+		<meta name="Keywords" content="Math, Arithmetic, Algebra, Geometry, Pre-calculus, Calculus, Statistics, Probability, Science, Education, Examples, Exercises, Notes">
 		<meta name="Description" content="Intuitive examples and comprehensive guides for self-directed learning">
 		<!-- Bootstrap CSS -->
     	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 			<div class="introBox" id="introduction">
 				<p class="mission">
 					<h1>Welcome to Skyridge</h1> 
-                    <BLOCKQUOTE>Discover something new</BLOCKQUOTE>
+                    <!--<BLOCKQUOTE>Discover something new</BLOCKQUOTE>-->
 				</p>
 			</div>
  
@@ -30,34 +30,37 @@
 
         <div id="menu">
 			<ul style="list-style-type:none;">
-                <!-- Button triggers modal -->
-                <li><button id="missionbutton" data-toggle="modal" data-target="#mission">Skyridge</button></li>
-                <!-- Button triggers modal -->
-                <li><button id="subjectsbutton" data-toggle="modal" data-target="#index">Subjects</button></li>
-                <!-- Button triggers modal -->
-                <li><button id="contactbutton" data-toggle="modal" data-target="#contact">Contact</button></li>
-                <!-- Button triggers modal -->
-	   		    <li><button id="termsbutton" data-toggle="modal" data-target="#social">Terms</button></li>
+                <!-- Button Triggers Mission Modal -->
+                <li><button id="missionbutton" data-toggle="modal" data-target="#mission" tabindex="1">Skyridge</button></li>
+                <!-- Button Triggers Subjects Modal -->
+                <li><button id="subjectsbutton" data-toggle="modal" data-target="#index" tabindex="2">Subjects</button></li>
+                <!-- Button Triggers Contact Modal -->
+                <li><button id="contactbutton" data-toggle="modal" data-target="#contact" tabindex="3">Contact</button></li>
+                <!-- Button Triggers Terms Modal -->
+	   		    <li><button id="termsbutton" data-toggle="modal" data-target="#terms" tabindex="4">Terms</button></li>
             </ul>
 		</div>
 
-        <!-- About Skyridge Modal -->
+        <!-- Skyridge Mission Modal -->
         <div class="modal fade" id="mission" tabindex="-1" role="dialog" aria-labelledby="missionLabel" aria-hidden="true">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"></button>
-                        <h4 class="modal-title" id="missionLabel">About Skyridge LLC</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>     
+                        <h4 class="modal-title" style="text-align:center" id="missionLabel">About Skyridge LLC</h4>
                     </div>
-                    <div class="modal-body">
-                        <address>
-                            Mission: Engage and empower students for a lifetime of learning by providing intuitive examples and comprehensive materials for self-directed learning
-                            </br></br>    
-                            Chief Learning Officer: <a data-toggle="modal" href="#dshen"> Daniel Shen</a>
-                            </br></br>
-                            Date Organized: July 13, 2012
+                    <div class="modal-body" style="overflow: hidden;">
+                        <article style="text-align: center;">
 
-                        </address>
+                            <strong>Mission:</strong> <em>Engage and empower students <br>for a lifetime of learning</em>
+                            <br><br>
+                            <strong>Method:</strong> <em>Provide intuitive examples and comprehensive <br>materials for self-directed learning</em>
+                            <br><br>    
+                            <strong>Founder:</strong> <a data-toggle="modal" href="#dshen"> Daniel Shen</a>
+                            <br><br>
+                            <!--<strong>Date Organized:</strong> July 13, 2012
+                            <br><br>-->
+                        </article>
                     </div>
                 </div>
             </div>
@@ -68,15 +71,15 @@
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title" style="text-align:center">Daniel Shen</h4>
                     </div>
                     <div class="modal-body row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <img style="border-radius:10%" align="middle" class="img-responsive" src="assets/images/portraits/dan-shen-450.jpg" alt="">
+                            <img style="border-radius:10%" align="middle" class="img-responsive" src="assets/images/portraits/dan-450.jpg" alt="">
                         </div>    
                         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                            <p>Hi there! <br><br>My name is Daniel and I am a Cincinnati native - born and raised. For college, I left all that I knew to study Economics and Mathematics at Yale. My original intent with this website was to create a place where I could share my thoughts, catalog my <a href="travel/index.html">experiences</a>, and learn as much as possible. <br><br>Lesson one: building a website from scratch with no prior experience is surprisingly non-intuitive. Luckily, I have the backing of a few of the smartest, funniest, and kind-hearted people I know: my support network of family and friends. With their gratuitous help and understanding, I now possess the nascent beginnings of a blossoming website and the motivation necessary to keep plodding forward with this project.<br><br>As I continue to develop this site, please feel free to reach out with any questions, comments, or concerns (but preferably not with any bills or lawsuits). In other words, please tell me if I'm doing something wrong or if you come across anything that hasn't been cited properly. I'd also appreciate suggestions on how to improve. Otherwise, I hope you enjoy! <br><br>- Daniel</p>
+                            <p><br>Hello! <br><br>I'm Daniel, and I was born and raised in Cincinnati. I attended Yale Unversity where I studied Economics and Mathematics <sup><a href="http://catalog.yale.edu/ycps/subjects-of-instruction/economics-mathematics/" target="_blank">[1]</a></sup>.  In college, I was a Richard U. Light Fellow <sup><a href="http://light.yale.edu/about/light-fellowship-yale" target="_blank">[2]</a></sup>, a member of the Yale Advisory Committee on Investor Responsibility <sup><a href="http://acir.yale.edu/" target="_blank">[3]</a></sup>, and the leader of the Dwight Hall Socially Responsible Investment Fund <sup><a href="http://www.dwighthallsri.org/site/index" target="_blank">[4]</a></sup>. I also served as a course development assistant for the Yale Mathematics Department <sup><a href="http://science.yalecollege.yale.edu/academics/faculty-resources/science-and-qr-course-development-and-improvement" target="_blank">[5]</a></sup>, a peer tutor for the Yale Science and Quantitative Reasoning Center <sup><a href="http://ctl.yale.edu/tutoring/quantitative-reasoning-science/science-and-qr-tutoring-program" target="_blank">[6]</a></sup>, and a student ambassador for the Yale Admissions Office <sup><a href="http://admissions.yale.edu/what-yale-looks-for" target="_blank">[7]</a></sup>.<br><br>My original intent with this website was to create a place where I could help students learn math and econ while sharing ideas that interest me. As I continue to develop this site, feel free reach out with any questions, comments, or concerns (but preferably not with any bills or lawsuits). Please also reach out if you have any special topic requests - I'd love to chat with you. I hope you enjoy! <br><br>- Daniel</p>
                         </div>  
                     </div>
                 </div>
@@ -88,286 +91,279 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"></button>
-                        <h4 class="modal-title" id="subjectsLabel">Index</h4> 
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center"  id="subjectsLabel">Index</h4> 
                     </div>
+
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-sm-1">
+                            <div class="col-sm-1 col-xs-0">
                             </div>
-                            <div class="col-sm-5">  
-                                <h2 style="text-align: left;">Subjects</h2>
-                                <ul class="almanac-list selector-list group">
-                                    <li class="page_item"><a href="#">A</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="algebra/index.html">Algebra</a></li>
-                                            <!--<li class="page_item"><a href="#">Analysis</a></li>-->
-                                            <li class="page_item"><a href="arithmetic/index.html">Arithmetic</a></li>
+                            <div class="col-sm-5 col-xs-6">  
+                                <h2 class="subject-title">Subjects</h2>
+                                <ul class="subject-index">
+                                    <li><h2 class="subject-list">A</h2>
+                                        <ul class="subject">
+                                            <!--<li><a href="#">Algebra</a></li>-->
+                                            <li><a href="arithmetic/index.html">Arithmetic</a></li>
                                         </ul>
                                     </li>
-                                    <!--<li class="page_item" style=""><a href="#">B</a></li>
-                                        <li class="page_item"><a href="#">C</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="calculus/index.html" target="_blank">Calculus</a></li>
-                                                <li class="page_item"><a href="#">Combinatorics</a></li>    
-                                            </ul>
-                                        </li>
-                                    <li class="page_item"><a href="#">D</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="#">Differential Equations</a></li>  
+                                    <li><h2 class="subject-list">B</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Brainteasers</a></li>
                                         </ul>
                                     </li>
-                                    <li class="page_item" style=""><a href="#">E</a></li>
-                                    <li class="page_item" style=""><a href="#">F</a></li>-->
-
-                                    <!--<li class="page_item"><a href="#">G</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="geometry/index.html">Geometry</a></li>  
+                                <!--
+                                    <li><h2 class="subject-list">C</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Calculus</a></li> 
                                         </ul>
                                     </li>
-                                    <li class="page_item" style=""><a href="#">H</a></li>
-                                    <li class="page_item" style=""><a href="#">I</a></li>
-                                    <li class="page_item" style=""><a href="#">J</a></li>
-                                    <li class="page_item" style=""><a href="#">K</a></li>
-                                    <li class="page_item"><a href="#">L</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="#">Logic</a></li>
+                                    <li><h2 class="subject-list">F</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Finance</a></li> 
                                         </ul>
                                     </li>
-                                    <li class="page_item" style=""><a href="#">M</a></li>
-                                    <li class="page_item"><a href="#">N</a>
-                                        <ul class="children">
-                                            <li><a href="#">Number Theory</a></li>
+                                    <li><h2 class="subject-list">G</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Geometry</a></li> 
                                         </ul>
                                     </li>
-                                    <li class="page_item" style=""><a href="#">O</a></li>
-                                    <li class="page_item"><a href="#">P</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="#">Pre-Calculus</a></li>
-                                            <li class="page_item"><a href="#">Probability</a></li>
+                                    <li><h2 class="subject-list">L</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Linear Algebra</a></li> 
                                         </ul>
                                     </li>
-                                    <li class="page_item" style=""><a href="#">Q</a></li>
-                                    <li class="page_item" style=""><a href="#">R</a></li>
-                                    <li class="page_item"><a href="#">S</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="#">Statistics</a></li>
-                                        </ul>
-                                    </li>-->
-                                    <li class="page_item"><a href="#">T</a>
-                                        <ul class="children">
-                                            <li class="page_item"><a href="trigonometry/index.html">Trigonometry</a></li>
+                                    <li><h2 class="subject-list">P</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Probability</a></li>
                                         </ul>
                                     </li>
-                                    <!--<li class="page_item" style=""><a href="#">U</a></li>
-                                    <li class="page_item" style=""><a href="#">V</a></li>
-                                    <li class="page_item" style=""><a href="#">W</a></li>
-                                    <li class="page_item" style=""><a href="#">X</a></li>
-                                    <li class="page_item" style=""><a href="#">Y</a></li>
-                                    <li class="page_item" style=""><a href="#">Z</a></li>-->
+                                    <li><h2 class="subject-list">S</h2>
+                                        <ul class="subject">
+                                            <li ><a href="#">Statistics</a></li>
+                                        </ul>
+                                    </li>
+                                -->
+                                    <li><h2 class="subject-list">T</h2>
+                                        <ul class="subject">
+                                            <li><a href="#">Trigonometry</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                     
-                            <div class="col-sm-5">
-                                <h2 style="text-align: left;">Topics</h2>
-                                    <ul class="almanac-list property-list group">
-                                        <!--<li class="page_item"><a href="#">A</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
+                            <div class="col-sm-5 col-xs-6">
+                                <h2 class="topic-title">Topics</h2>
+                                    <ul class="topic-index">
+                                        <li><h2 class="topic-list">A</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Arithmetic Sequences</a></li>
                                             </ul>
                                         </li>
-                                        <li class="page_item"><a href="#">B</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
+                                        <li><h2 class="topic-list">B</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Binary</a></li>
+                                            </ul>
+                                        </li>                                        
+                                        <li><h2 class="topic-list">C</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Compass Constructions</a></li>
+                                            </ul>
+                                        </li>             
+                                        <li><h2 class="topic-list">G</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Geometric Sequences</a></li>
+                                            </ul>
+                                        </li>                           
+                                        <li><h2 class="topic-list">L</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Law of Cosines</a></li>
+                                                <li><a href="#">Law of Sines</a><li>
                                             </ul>
                                         </li>
-                                        <li class="page_item"><a href="#">C</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
+                                        <li><h2 class="topic-list">P</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Present Value</a><li>
                                             </ul>
                                         </li>
-                                        <li class="page_item" style=""><a href="#">D</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>    
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">E</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
+                                        <li><h2 class="topic-list">U</h2>
+                                            <ul class="topic">
+                                                <li><a href="#">Unit Circle</a><li>
                                             </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">F</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">G</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">H</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">I</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">J</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">K</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">L</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">M</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">N</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">O</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">P</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">Q</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">R</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">S</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">T</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">U</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">V</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">W</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">X</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">Y</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="page_item" style=""><a href="#">Z</a>
-                                            <ul class="children">
-                                                <li class="page_item"><a href="#"></a></li>
-                                            </ul>
-                                        </li>-->
+                                        </li>                                                            
                                     </ul>
                             </div>
-                            <div class="col-sm-1">
+                            <div class="col-sm-1 col-xs-0">
                             </div>
-                        </div>
+                        </div>                            
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contact Modal -->
-        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+        <!--Contact Modal-->
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactlabel" aria-hidden="true">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"></button>
-                        <h4 class="modal-title" id="contactLabel">Contact</h4>    
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center" style="text-align:center">Contact</h4>
                     </div>
-                    <div class="modal-body">
-                        <address>
-                            Email: daniel.shen@skyridge.us
-                            <br><br>
-                            Calendar: <a data-toggle="modal" href="#gcal">Daniel's Schedule</a>
-                            <br><br>
-                        </address>
+                    <div class="modal-body" style="overflow: hidden;">
+                            <div class="col-sm-4 col-xs-12 thumb">
+                                <button class="thumbnail" data-toggle="modal" data-target="#calendar">
+                                    <div>
+                                    Calendar
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 thumb">
+                                <button class="thumbnail" data-toggle="modal" data-target="#email">
+                                    <div>
+                                    Email
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 thumb">
+                                <button class="thumbnail" data-toggle="modal" data-target="#github">
+                                    <div>
+                                    GitHub
+                                    </div>
+                                </button>
+                            </div>
+                            <!--<div class="col-md-4 col-xs-6 thumb">
+                                <button class="thumbnail" data-toggle="modal" data-target="#desmos">
+                                    <div>
+                                    Desmos
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-md-4 col-xs-6 thumb">
+                                <button class="thumbnail" data-toggle="modal" data-target="#slack">
+                                    <div>
+                                    Slack
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-md-4 col-xs-6 thumb">
+                                <button class="thumbnail" data-toggle="modal" data-target="#stackexchange">
+                                    <div>
+                                    Stack Exchange
+                                    </div>
+                                </button>
+                            </div>
+                            -->
+                    </div>                        
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <!--Google Calendar Modal-->
-        <div class="modal fade modal-fullscreen" id="gcal" tabindex="-1" role="dialog" aria-labelledby="gcalLabel" aria-hidden="true">
+        <!--Calendar Modal-->
+        <div class="modal fade modal-fullscreen" id="calendar" tabindex="-2" role="dialog" aria-labelledby="calendarlabel" aria-hidden="true">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"></button>
-                        <h4 class="modal-title" style="text-align:center"> Calendar</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center" style="text-align:center">Calendar</h4>
                     </div>
-                    <div class="modal-body row">
-                        <div class="col-xs-1">
+                        <div class="modal-body row">
+                        <div class="col-sm-1 col-xs-0">
                         </div>  
-                        <div class="col-xs-10">
+                          <div class="col-sm-10 col-xs-12">
                             <div class="responsive-iframe-container">
                                 <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=daniel.shen%40skyridge.us&amp;color=%23125A12&amp;ctz=Asia%2FShanghai" style="border-width:0" scrolling="no"></iframe>
                             </div>
-                        </div>
-                        <div class="col-xs-1">
-                        </div>  
-                    </div>   
+                          </div>
+                          <div class="col-sm-1 col-xs-0">
+                          </div>  
+                        </div>   
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <!-- Modal -->
+                <div id="email" class="modal fade" role="dialog" tabindex="-2" aria-labelledby="emaillabel" aria-hidden="true">
+                  <div class="modal-dialog modal-md">
+                <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center">Email</h4>
+                      </div>
+                      <div class="modal-body" style="text-align:center">
+                            <div class="col-xs-12 thumb">
+                                <button class="thumbnail" href="mailto:daniel.shen@skyridge.us" target="_top" style="background-color:transparent; border:none; color:black;">
+                                    <div>
+                                    <p>This is my personal email address that I check daily. Please feel free to reach out if you have questions!</p>
+                                    daniel.shen@skyridge.us
+                                    </div>
+                                </button>
+                                <br/>
+                            </div>                            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <!-- Modal -->
+                <div id="github" class="modal fade" role="dialog" tabindex="-2" aria-labelledby="githublabel" aria-hidden="true">
+                  <div class="modal-dialog modal-md">
+
+                <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center">GitHub</h4>
+                      </div>
+                      <div class="modal-body" style="text-align:center">
+                                <div class="col-xs-12 thumb">
+                                <a class="thumbnail" href="https://github.com/daniel-shen/skyridge-us" target="_blank" style="background-color:transparent; border:none; color:black; min-height: 100px; font-size: 18px; margin: 1%;">
+                                    <div>
+                                    <p> This is my first time building a website, and one thing that I've learned is that keeping track of all the updates isn't easy, even when it's just me. <br><br>GitHub helps by taking care of version control and allowing for collaboration. Feel free to poke around.</p>                                        
+                                    github.com/daniel-shen/skyridge-us
+                                    </div>
+                                </a>
+                            </div>               
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
 
         <!-- Terms of Use Modal -->
-        <div class="modal fade" id="social" tabindex="-1" role="dialog" aria-labelledby="socialLabel" aria-hidden="true">
+        <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"></button>
-                        <h4 class="modal-title" id="socialLabel">Terms of Use</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center" id="termsLabel">Terms of Use</h4>
                     </div>
-                    <div class="modal-body">
-                        <address>
-                            <h5>Terms of Use</h5>
-                            <h5>Privacy Policy</h5>
-                        </address>
+                    <div class="modal-body" style="text-align: center;">
+                        <div class="col-sm-1 col-xs-0">
+                        </div>
+
+                        <div class="col-sm-10 col-xs-12">
+                        <section>
+                            <article>
+                            <h5><strong>Terms of Use</strong></h5>
+                            Skyridge.us is free to use! The site will eventually be monetized through Google Adsense advertisements and an Amazon.com store. I currently do not accept donations.<br><br>
+                            </article>
+                            <hr>
+                            <article>
+                            <h5><strong>Privacy Policy</strong></h5>
+                            I use Google Analytics to learn more about my visitors in order to design a (hopefully) better site. Other than that, I believe that privacy is of utmost importance and collect no additional information on visitors. However, be warned that there are certain links to external websites that have privacy policies that differ from mine (examples include but are not limited to yale.edu, github.com, and amazon.com). <br><br> Separately, this should be pretty obvious, but if you email me, then I will be able to contact you directly; I will not intentionally distribute or sell your email addresses to others. 
+                            <br><br>
+                            </article> 
+                        </section>
+                        </div>
+
+                        <div class="col-sm-1 col-xs-0">
+                        </div>
                     </div>  
                 </div>
             </div>
